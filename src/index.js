@@ -71,7 +71,6 @@ $(document).ready(async function () {
 
         const gameDealDetail = await getGameDealDetail(cheapestDeal.dealID);
 
-        // console.log({ gameDetail, gameDealDetail, cheapestDeal })
         const starCount = Math.round(parseInt(gameDealDetail.gameInfo.steamRatingPercent) / 20);
         const blankStarCount = 5 - starCount;
 
