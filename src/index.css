@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .card-container {
+        @apply container my-12 mx-auto px-4 md:px-12;
+    }
+    .card-container-row {
+        @apply flex flex-wrap -mx-1 lg:-mx-4;
+    }
+    .card-single{
+       @apply my-1 px-1 w-full h-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3;
+    }
+  }
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-green {
+    @apply bg-card-green text-white;
+  }
+  .btn-green:hover {
+    transition: 0.8s;
+    @apply bg-green-700;
+ 
+}
+  .card-single {
+    animation-duration: 3s;
+    animation-name: fadein;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
