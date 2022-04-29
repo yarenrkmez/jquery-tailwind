@@ -1,4 +1,4 @@
-# path_case
+# jquery tailwind
 
 Çalıştırılması için;
 npm install
